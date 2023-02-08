@@ -1,3 +1,8 @@
+* {
+    font-family: 'Carter One', cursive;
+font-family: 'Poppins', sans-serif;;
+}
+
 ul li {
     list-style-type: none;
     color: white;
@@ -5,6 +10,7 @@ ul li {
 }
 .navbar-brand {
     font-weight: 700;
+    color:rgba(224,127,73,255);;
 }
 .nav-link.active {
     font-weight: 700;
@@ -20,9 +26,9 @@ p {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(16,21,25,255);
 }
-* {
-    font-family: 'Carter One', cursive;
-font-family: 'Poppins', sans-serif;;
+#konten1 {
+    background-color: rgba(16,21,25,255);
+    padding: 50px 0px 0px 0px;
 }
