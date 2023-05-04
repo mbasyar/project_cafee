@@ -1,73 +1,82 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:ital,wght@0,400;0,500;1,400;1,600&display=swap');
-      </style>
-      <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+
+    <!--css internal -->
+    <link rel="stylesheet" href="./style.css">
+    <!--logo judulweb-->
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <title>Basyar Cafe</title>
   </head>
 
 
-  <body style="background-color:rgba(16,21,25,255); margin: 0px;">
-    <!--navigasi-->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-        <div class="container">
+  <body style="background-color:rgb(12, 15, 15); margin: 0px;">
+    <!--awal navbar-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container p-2 m-auto">
             <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="" width="30" height="24" class="me-3">Rumah Kopi</a>
+            <img src="img/logo.jpg" alt="logo" width="30" height="24" class="me-3">Rumah Kopi</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Layanan</a>
+                <a class="nav-link active" aria-current="page" href="#service">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Menu Favorite</a>
+                <a class="nav-link" href="#service">Service</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Fasilitas</a>
+                <a class="nav-link" href="#menu_favorite">Menu Favorite</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#fasilitas">Fasilitas</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#testimoni">Testimonial</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
-              <button class="btn btn-dark btn-sm" type="submit">Login</button>
+              <button type="button" class="btn btn-warning mx-2">Login</button>
+              <!-- <button type="button" class="btn btn-warning">Register</button> -->
             </form>
           </div>
         </div>
       </nav>
+
     <!--carosel-->
-    <div class="awal">
-        <div class="container pb-5">
+    <div class="corousel">
+        <div class="container py-2">
             <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/Screenshot_16.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h3>RUMAH KOPI</h3>
-                    <p>minum kopi sepusanya dengan lagu indie</p>
-                    </div>
+                    <img src="Screenshot_1.jpg" class="d-block w-100 h-50" alt="img">
+                    <!-- <div class="carousel-caption"><br><br> 
+                    <h3>WELCOME TO<h3/> 
+                    <h4>RUMAH KOPI</h4>
+                    </div> -->
                 </div>
                 <div class="carousel-item">
-                    <img src="img/Screenshot_2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h3>RUMAH KITA</h3>
-                    <p>Bisa belajar dan bekerja di rumah kita</p>
-                    </div>
+                    <img src="Screenshot_3.jpg" class="d-block w-100 h-50" alt="img">  
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                    <h1>CAFEE TERBAIK</h1>
+                    <h2>JABODETABEK</h2>
+                    </div> -->
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -81,66 +90,68 @@
             </div>
         </div>
     </div>
-
-
-    <!--awal konten-->
-    <div class="container-fluid text-light" style="padding-top: 80px; background-color: #0e1317;">
-        <div class="container">
-            <div class="row my-2">
+    
+    <!--halaman service-->
+    <div class="container-fluid text-light mt-5 d-flex justify-content-center align-items-center" style="background-color: #0e1317;">
+        <div class="container" id="service">
+            <div class="row my-2 p-5">
                 <div class="col-12 text-center">
                     <h1 style="color: white;">Service</h1>
+                    <hr>
                 </div>
             </div>
-            <div class="row text-sm-center">
+            <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-business-time fa-5x mb-2"></i>
                     <h2>Workspace favorite</h2> 
-                    <p>bisa dijadikan tempat untuk bekerja, belajar, berkumpul dengan teman, karena memili tempat yang luas dan nyaman</p>
+                    <p>Tidak ada yang lebih menyenangkan daripada bekerja di workspace favorit sambil menyeruput kopi di kafe yang nyaman.</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-camera-retro fa-5x mb-2"></i>
                     <h2>Instagram Story</h2> 
-                    <p>sangat cocok untuk anda yang suka mengabadikan tempat-tempat yang keren, cafe ini sangat cocok untuk di post di insta story.</p>
+                    <p>Selamat datang di cafe kami yang Instagramable dengan beragam sudut yang Instagram Story-worthy. Jadikan setiap momenmu di sini menjadi cerita yang tak terlupakan dengan Instagram Story.</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-headset fa-5x mb-2"></i>
                     <h2>Music Hits</h2> 
-                    <p>Bisa sambil dengerin lagu favorite kamu, cafe ini mempunyai salon yang besar dan berisik seperti suara kenalpot beat</p>
+                    <p>Saatnya menikmati hidup dengan segelas kopi dan ditemani irama musik hits terbaru. Biarkan rasa lelah dan penatmu sirna, dan nikmati momen ini sepenuhnya!</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-wifi fa-5x mb-2"></i>
                     <h2>Free Wifi</h2> 
-                    <p>Tersedia wifi gratis untuk anda yang tiba-yiba kehabisan paket data. tersedia limit perhari 1Gb untuk pelanggan setia</p>
+                    <p>Selamat datang di kafe kami! Nikmati kopi dan kue lezat sambil berselancar di internet dengan koneksi Wi-Fi gratis kami.</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-coffee fa-5x mb-2"></i>
-                    <h2>Cofee</h2> 
-                    <p>tidak lengkap jika mengerjakan tugas tanpa ditemani oleh secangkir kopi bukan? cafe ini memiliki varian cofee yg beramcam-macam</p>
+                    <h2>Cofee Special</h2> 
+                    <p>Rasakan kehangatan dan kenikmatan dalam setiap tegukan kopi special kami, hadir dengan aroma dan rasa yang tak tertandingi, seperti langit di pagi hari.</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6 p-5 mb-3 mt-3"> 
                     <i class="fa-solid fa-joint fa-5x mb-2"></i>
                     <h2>Smoking Area</h2> 
-                    <p>Minum kopi tentu butuh penemannya bukan? cafe ini juga menyediakan rokolk-rokok yang beraneka ragam. </p>
+                    <p>Menghirup aroma rokok yang menyatu dengan aroma kopi di kafe ini membuat saya merasa seperti sedang menikmati momen yang tenang dan memikirkan banyak hal.</p>
                     <!-- <a href="#" class="btn btn-outline-warning">Lihat Foto</a> -->
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="konten1">
-        <div class="row my-2">
-            <div class="col-12 text-center">
+
+    <!--halaman menu favorite-->
+    <div class="container-fluid" id="menu_favorite" style="background-color: rgb(12, 15, 15);">
+        <div class="row">
+            <div class="col-12 text-center my-4">
                 <h1 style="color: white;">Menu Favorite</h1>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row pb-5">
             <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="card text-center pt-2" style="color: rgb(255, 145, 0); border: none; background-color:rgba(16,21,25,255);">
-                    <img src="img/kopi.jpg" class="img-fluid" style="width: 300px; border-radius: 15px; margin: auto;">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317;">
+                    <img src="img/kopi.jpg" class="img-fluid py-2" style="width: 250px; border-radius: 15px; margin: auto;">
                     <h3 class="mt-2">Coffee Cappucinno</h3>
                     <div class="icon">
                     <i class="fa-sharp fa-solid fa-star text-warning"></i>
@@ -153,8 +164,8 @@
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="card text-center" style="color: rgb(255, 145, 0); border: none; background-color:rgba(16,21,25,255);">
-                    <img src="img/koko.jpg" class="img-fluid" style="width: 300px; border-radius: 15px; margin: auto;">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317;">
+                    <img src="img/koko.jpg" class="img-fluid" style="width: 250px; border-radius: 15px; margin: auto;">
                      <h3 class="mt-2">Black Coffee Late</h3>
                     <div class="icon">
                     <i class="fa-sharp fa-solid fa-star text-warning"></i>
@@ -167,8 +178,8 @@
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="card text-center" style="color: rgb(255, 145, 0); border: none;  background-color:rgba(16,21,25,255);">
-                    <img src="img/kopiku.jpg" class="img-fluid" style="width: 300px; border-radius: 15px; margin: auto;">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none;  background-color:#0e1317;">
+                    <img src="img/kopiku.jpg" class="img-fluid" style="width: 250px; border-radius: 15px; margin: auto;">
                      <h3 class="mt-2">Americano Coffee</h3>
                     <div class="icon">
                     <i class="fa-sharp fa-solid fa-star text-warning"></i>
@@ -181,8 +192,8 @@
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="card text-center" style="color: rgb(255, 145, 0); border: none;  background-color:rgba(16,21,25,255);">
-                    <img src="img/kopikita.jpg" class="img-fluid" style="width: 300px; border-radius: 15px; margin: auto;">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none;  background-color:#0e1317;">
+                    <img src="img/kopikita.jpg" class="img-fluid" style="width: 250px; border-radius: 15px; margin: auto;">
                      <h3 class="mt-2">Coffee Espresso</h3>
                     <div class="icon">
                     <i class="fa-sharp fa-solid fa-star text-warning"></i>
@@ -195,71 +206,158 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid py-5" style="background-color: #0e1317;">
-        <div class="container mt-5">
-            <div class="row my-2">
-                <div class="col-lg-12 col-sm-12 text-center">
-                    <h1 style="color: white;">Layanan</h1>
+        <div class="row mb-5 mt-4">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317;">
+                    <img src="img/kue.jpg" class="img-fluid" style="width: 250px; border-radius: 15px; margin: auto;">
+                    <h3 class="mt-2">Nasi Goreng Hot</h3>
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    </div>
+                    <p>Rp: 22.000,00</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 mt-5" style="text-align: center;">
-                    <img src="img/ngantor 2.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317;">
+                    <img src="img/kue2.jpg" class="img-fluid" style="width: 250px; border-radius: 15px; margin: auto;">
+                    <h3 class="mt-2">Ayam Geprekk</h3>
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    </div>
+                    <p>Rp: 29.000,00</p>
                 </div>
-                <div class="col-lg-6 col-sm-12 pt-sm-2 pb-sm-4" style="text-align: center; margin:auto;">
-                    <h1>Tempat Bekerja Yang Nyaman</h1>
-                    <p>sebagai pekerja freelance atau pekerja WFA , sangat cocok untuk singgah dicafe kami.
-                    karena memiliki tempat yang nyaman dan terjauh dari gangguan</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317">
+                    <img src="img/miee.jpg" class="img-fluid" style="width: 250px; height: 250px; border-radius: 15px; margin: auto;">
+                    <h3 class="mt-2">Mie Ayam biasa</h3>
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    </div>
+                    <p>Rp: 19.000,00</p>
                 </div>
-                <div class="col-lg-6 col-sm-12 py-sm-5 m-auto" style="text-align: center;">
-                    <h1>Ruangan Yang Nyaman</h1>
-                    <p>ruangan yang luas dan bersih, serta dilengkapi fasilitas-fasilitas yang sangat menunjang kenyamanan customer kami</p>
-                </div>
-                <div class="col-lg-6 col-sm-12 mt-lg-5" style="text-align: center;">
-                    <img src="img/nagntor 4.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
-                </div>
-                <div class="col-lg-6 col-sm-12 mt-5" style="text-align: center;">
-                    <img src="img/ngantor.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
-                </div>
-                <div class="col-lg-6 col-sm-12 py-sm-5 m-auto" style="text-align: center;">
-                    <h1>Teman Kesuseksanmu</h1>
-                    <p>jika anda pekerja freelance, kami siap menemani anda dari mulai mencari client sampai anda mendapatkan projek yang banyak..hehehee</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="card text-center pt-3" style="color: rgb(255, 145, 0); border: none; background-color:#0e1317;">
+                    <img src="img/mie.jpeg" class="img-fluid" style="width: 250px; height: 250px; border-radius: 15px; margin: auto;">
+                    <h3 class="mt-2">Mie Ayam Special</h3>
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    </div>
+                    <p>Rp: 39.000,00</p>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row pb-5 pt-2">
-                <div class="col-lg-3 col-sm-6 mt-3 text-start">
-                    <h2>resource</h2>
-                    <ul class="list-group">
-                        <li>blog</li>
-                        <li>help center</li>
-                        <li>release notes</li>
-                        <li>status</li>
-                    </ul>
+
+    <!--halaman layanan-->
+    <div class="container-fluid" id="menu_favorite" style="background-color: rgb(12, 15, 15);">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 style="color: white;">Networking </h1>
+            </div>
+        </div>
+        <div class="row pt-4" style="background-color:#0e1317;">
+            <div class="col-8 m-auto" style="color: rgb(255, 145, 0); border: none; text-align: center;"> 
+                <p style="text-align: justify;">Selamat datang di Networking Center Cafe! Tempat yang tepat untuk menjalin hubungan bisnis dan sosial sambil menikmati secangkir kopi yang lezat. Dengan suasana yang nyaman dan tenang, kami menyediakan ruang untuk berdiskusi, berkolaborasi, atau hanya bersantai dengan teman-teman baru. Jadi, datanglah ke Networking Center Cafe dan jadilah bagian dari komunitas kami yang berkembang pesat!
+                </p>
+            </div>
+            <div class="col-8 m-auto" style="color: rgb(255, 145, 0); border: none; text-align: center;">
+                <div class="icon">
+                    <i class="fa-solid fa-handshake fa-4x" style="margin: 50px; color:rgb(255, 145, 0)"></i>
+                    <i class="fa-solid fa-users fa-4x"  style="margin: 50px; color:rgb(255, 145, 0)"></i>
+                    <i class="fa-brands fa-whatsapp fa-4x"  style="margin: 50px; color:rgb(255, 145, 0)"></i>
+                    <i class="fa-brands fa-skype fa-4x"  style="margin: 50px; color:rgb(255, 145, 0)"></i>
+                    <i class="fa-solid fa-people-arrows fa-4x"  style="margin: 50px; color:rgb(255, 145, 0)"></i>
                 </div>
-                <div class="col-lg-3 col-sm-6 mt-3">
-                    <h2>comunnity</h2>
-                    <ul class="list-group">
+            </div>
+        </div>
+    </div>
+        <div class="row p-5" style="background-color:#0e1317;">
+                <div class="col-lg-6 col-sm-12 mt-5" style="text-align: center;">
+                    <img src="img/ngantor 2.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
+                </div>
+                <div class="col-lg-6 col-12 py-sm-5 m-auto" style="text-align: center; margin:auto;">
+                    <h1 class="my-3" style="color: rgb(255, 145, 0);">Tempat bekerja santai</h1>
+                    <p style="text-align:left;">Temukan tempat bekerja yang nyaman dan inspiratif di cafe kami! Dengan suasana yang tenang dan fasilitas lengkap, Anda bisa fokus pada pekerjaan Anda tanpa gangguan. Nikmati secangkir kopi berkualitas dan hidangan lezat dari dapur kami sambil bekerja dengan produktivitas yang tinggi. Kunjungi kami sekarang dan rasakan sendiri kenyamanan tempat bekerja yang sesungguhnya!</p>
+                </div>
+                <div class="col-lg-6 col-12 py-sm-5 m-auto" style="text-align: center;">
+                    <h1 class="my-3" style="color: rgb(255, 145, 0);">Ruangan Yang Nyaman</h1>
+                    <p style="text-align:left;">Nikmati suasana yang nyaman dan menenangkan di cafe kami! Ruangan yang nyaman dengan desain yang modern dan elegan akan membuat kunjunganmu semakin spesial. Bersantai sambil menikmati kopi atau makanan ringan favoritmu di lingkungan yang hangat dan menyenangkan. Kunjungi kami sekarang dan rasakan kenyamanannya sendiri!</p>
+                </div>
+                <div class="col-lg-6 col-12 mt-lg-5" style="text-align: center;">
+                    <img src="img/nagntor 4.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
+                </div>
+                <div class="col-lg-6 col-12 mt-5" style="text-align: center;">
+                    <img src="img/ngantor.jpg" class="img-fluid" style="width: 600px; border-radius: 15px;">
+                </div>
+                <div class="col-lg-6 col-12 py-sm-5 m-auto" style="text-align: center;">
+                    <h1 class="my-3" style="color: rgb(255, 145, 0);">Teman Kesuseksanmu</h1>
+                    <p style="text-align:left;">"Temukan Teman Kesuksesanmu di Cafe Kami! Nikmati Kopi dan Makanan yang Menginspirasi Sambil Berjejaring dengan Para Pencari Kesuksesan Lainnya. Mari Bergabung dan Raih Impianmu Bersama Kami!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--halaman testimonial-->
+    <div class="container my-5" id="testimoni">
+        <div class="row my-2">
+            <div class="col-lg-12 col-sm-12 text-center mb-4">
+                <h1 style="color: rgb(255, 145, 0);">Testimonial</h1>
+            </div>
+            <div class="col-lg-6 col-12 text-center m-auto p-5" id="testi">
+                <p style="text-align:justify;">“I found my new favorite taste at these guys’ shop. Namely, the “Rwandan Inzoyu”. Its sour hints and strong aftertaste fit my morning routine just alright. I’m thankful for all the diversity that these guys brought in with so many coffee types and brands here!”</p><br><br>
+                <img src="img/2.2.png" class="img-thumbnail rounded-circle" style="width: 100px; margin-bottom: 10px;" >
+                <p style="text-align:center;">M KHOIRUL BASYAR <br>
+                    frontend web developer
+                </p>
+            </div>
+        </div>
+</div>
+   
+    <!--halaman contact-->
+    <footer style="margin-top: 70px;">
+        <div class="container-fluid p-5 mt-5" id="contact">
+            <div class="row" style="background-color:#0e1317;">
+                <div class="col-lg-3 col-8 mt-3">
+                    <h2 class="mb-3" style="color: rgb(255, 145, 0)";>About Us</h2>
+                    <p>rumah kami adalah perusahaan yg bergerak pada bidang usaha makanan dan minuman yg memiliki beberapa cabang di indonesia.</p>
+                </div>
+                <div class="col-lg-3 col-8  mt-3">
+                    <h2 class="mb-3"style="color: rgb(255, 145, 0)">Site Link</h2>
+                    <ul class="list-group" style="text-align:justify;">
                         <li>Twitter</li>
                         <li>Instagram</li>
                         <li>Facebook</li>
                         <li>Podcast</li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 mt-3">
-                    <h2>company</h2>
+                <div class="col-lg-3 col-8 mt-3">
+                    <h2 class="mb-3"style="color: rgb(255, 145, 0)">Company</h2>
                     <ul class="list-group">
                         <li>About Us</li>
                         <li>Careers</li>
                         <li>Legal</li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 mt-3">
-                    <h2>Contact</h2>
+                <div class="col-lg-3 col-8 mt-3">
+                    <h2 class="mb-3"style="color: rgb(255, 145, 0)">Contact</h2>
                     <ul class="list-group">
                         <li>Linkedin</li>
                         <li>Watshapp</li>

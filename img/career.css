@@ -1,0 +1,15 @@
+ul li {
+    list-style-type: none;
+    color: white;
+    padding-left: 0px;
+}
+nav {
+    background-color: rgb(0, 0, 0);
+}
+.navbar-brand {
+    font-weight: 600;
+    color:rgba(224,127,73,255);;
+}
+.nav-link.active {
+    font-weight: 700;
+}
